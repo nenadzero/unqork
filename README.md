@@ -1,4 +1,21 @@
+[![NPM version][npm-version-image]][npm-url]
+[![NPM downloads][npm-downloads-image]][npm-downloads-url]
+[![MIT License][license-image]][license-url]
+
+[license-image]: https://img.shields.io/badge/license-Apache%202-blue.svg?style=flat
+[license-url]: LICENSE
+[npm-url]: https://npmjs.org/package/unqork
+[npm-version-image]: https://img.shields.io/npm/v/unqork.svg?style=flat
+[npm-downloads-image]: https://img.shields.io/npm/dm/unqork.svg?style=flat
+[npm-downloads-url]: https://npmcharts.com/compare/unqork?minimal=true
+
+## About
+
+This is not the official repository
+
 ## Install
+
+Using npm:
 
 ```javascript
 npm install unqork
