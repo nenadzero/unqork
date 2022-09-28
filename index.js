@@ -60,12 +60,27 @@ module.exports = class Unqork {
     return response.data;
   }
 
+  async #delete(path) {
+    const response = await axios.delete("https://" + this.#environment + ".unqork.io/api/1.0" + path, {
+      maxContentLength: Infinity,
+      maxBodyLength: Infinity,
+      headers: {
+        Authorization: "Bearer " + (await this.#checkToken()),
+      },
+    });
+    return response.status;
+  }
+
   async getSubmission(moduleId, submissionId) {
     return await this.#get("/modules/" + moduleId + "/submissions/" + submissionId);
   }
 
   async updateSubmission(moduleId, submissionId, json) {
     return await this.#put("/modules/" + moduleId + "/submissions/" + submissionId, json);
+  }
+
+  async deleteSubmission(moduleId, submissionId) {
+    return await this.#delete("/modules/" + moduleId + "/submissions/" + submissionId);
   }
 
   async execute(moduleId, json) {
