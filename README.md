@@ -27,9 +27,9 @@ npm install unqork
 const Unqork = require("unqork");
 
 (async () => {
-  const unqork = new Unqork("email", "password", "environment");
-  const submission = await unqork.getSubmission("6078e938d87660707f31c624", "6053e968afcc293120198785");
-  console.log(submission);
+    const unqork = new Unqork("email", "password", "environment");
+    const submission = await unqork.getSubmission("6078e938d87660707f31c624", "6053e968afcc293120198785");
+    console.log(submission);
 })();
 ```
 
@@ -57,4 +57,16 @@ const status = await unqork.deleteSubmission("6078e938d87660707f31c624", "6053e9
 
 ```javascript
 const submission = await unqork.execute("6078e938d87660707f31c624", { fullName: "John Doe" });
+```
+
+**getRevisions**(_moduleId_, _submissionId_)
+
+```javascript
+const revisions = await unqork.getRevisions("6078e938d87660707f31c624", "6053e968afcc293120198785");
+```
+
+**getRevision**(_moduleId_, _submissionId_, _revisionId_)
+
+```javascript
+const revision = await unqork.getRevision("6078e938d87660707f31c624", "6053e968afcc293120198785", "631e45648d8561859j23c789");
 ```

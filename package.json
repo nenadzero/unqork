@@ -1,26 +1,26 @@
 {
-  "name": "unqork",
-  "version": "1.0.5",
-  "description": "This is not the official repository",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nenadzero/unqork.git"
-  },
-  "keywords": [
-    "unqork",
-    "javascript"
-  ],
-  "author": "Nenad Proodovic",
-  "license": "Apache-2.0 license",
-  "bugs": {
-    "url": "https://github.com/nenadzero/unqork/issues"
-  },
-  "homepage": "https://github.com/nenadzero/unqork#readme",
-  "dependencies": {
-    "axios": "^0.27.2"
-  }
+    "name": "unqork",
+    "version": "1.0.6",
+    "description": "This is not the official repository",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nenadzero/unqork.git"
+    },
+    "keywords": [
+        "unqork",
+        "javascript"
+    ],
+    "author": "Nenad Proodovic",
+    "license": "Apache-2.0 license",
+    "bugs": {
+        "url": "https://github.com/nenadzero/unqork/issues"
+    },
+    "homepage": "https://github.com/nenadzero/unqork#readme",
+    "dependencies": {
+        "axios": "^0.27.2"
+    }
 }
