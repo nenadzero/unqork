@@ -27,7 +27,9 @@ npm install unqork
 const Unqork = require("unqork");
 
 (async () => {
-    const unqork = new Unqork("email", "password", "environment"); // new Unqork("example@email.com", "password123", "stg-example"); https://stg-example.unqork.com
+    // https://stg-example.unqork.com
+    // const unqork = new Unqork("example@email.com", "password123", "stg-example"); 
+    const unqork = new Unqork("email", "password", "environment"); 
     const submission = await unqork.getSubmission("6078e938d87660707f31c624", "6053e968afcc293120198785");
     console.log(submission);
 })();
